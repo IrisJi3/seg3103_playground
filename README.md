@@ -42,5 +42,5 @@ Numerator: exit
 ```
 
 With a screenshot from the terminal
-java_main.PNG
+assets/java_main.PNG
 
