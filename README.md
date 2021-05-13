@@ -33,8 +33,11 @@ Here is an output of the running program
 ```bash
 Newmath (type 'exit' to exit program)
 Numerator: 10
-Demoninator: 2
-10 / 2 = 5
+Demoninator: 5
+10 / 5 = 2
+Numerator: 20
+Demoninator: 6
+20 / 6 = 3
 Numerator: exit
 ```
 
