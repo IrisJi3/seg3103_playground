@@ -42,5 +42,5 @@ Numerator: exit
 ```
 
 With a screenshot from the terminal
+https://github.com/IrisJi3/seg3103_playground/blob/main/assets/java_main.PNG?raw=true
 
-![Running Java in the console](assets/java_main.png)
