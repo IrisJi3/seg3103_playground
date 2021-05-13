@@ -90,3 +90,38 @@ Test run finished after 83 ms
 With a screenshot from the terminal
 assets/junit_main.png
 
+### Elixir
+
+I am running Elixir 11.4 with Erlang 23
+
+```bash
+elixir --version
+Erlang/OTP 21 [erts-10.3] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Elixir 1.11.4 (compiled with Erlang/OTP 21)
+```
+
+To run the Elixir program (in `newmath_ex`), first I compile it
+
+```bash
+mix compile
+```
+
+Then I run it
+
+```bash
+iex -S mix
+```
+
+Here is an output of the running program
+
+```elixir
+iex(1)> NewmathEx.
+MixProject    div/2
+iex(1)> NewmathEx.div(10, 2)
+{:ok, 5.0}
+```
+
+With a screenshot from the terminal
+
+assets/elixir_iex.png
