@@ -16,6 +16,7 @@ C:\Users\xiash>java --version
 openjdk 11.0.10 2021-01-19
 OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.10+9)
 OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.10+9, mixed mode)
+```
 
 To run the Java program (in `newmath_java`), first I compile it
 
