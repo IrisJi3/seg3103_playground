@@ -44,3 +44,49 @@ Numerator: exit
 With a screenshot from the terminal
 assets/java_main.PNG
 
+### JUnit
+
+I am working with JUnit 5 (via Console standalone 1.7.1)
+
+To run JUnit, I need to compile the application (see above), and then compile the test code
+
+```bash
+javac -cp dist;lib/junit-platform-console-standalone-1.7.1.jar test/*.java
+```
+
+Then I run the tests using
+
+```
+java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+```
+
+Here is the output of the tests
+
+```bash
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+←[36m.←[0m
+←[36m+--←[0m ←[36mJUnit Jupiter←[0m ←[32m[OK]←[0m
+←[36m| '--←[0m ←[36mNewmathTest←[0m ←[32m[OK]←[0m
+←[36m|   +--←[0m ←[34mdiv_ok()←[0m ←[32m[OK]←[0m
+←[36m|   '--←[0m ←[34mdiv_by_zero()←[0m ←[32m[OK]←[0m
+←[36m'--←[0m ←[36mJUnit Vintage←[0m ←[32m[OK]←[0m
+
+Test run finished after 83 ms
+[         3 containers found      ]
+[         0 containers skipped    ]
+[         3 containers started    ]
+[         0 containers aborted    ]
+[         3 containers successful ]
+[         0 containers failed     ]
+[         2 tests found           ]
+[         0 tests skipped         ]
+[         2 tests started         ]
+[         0 tests aborted         ]
+[         2 tests successful      ]
+[         0 tests failed          ]
+
+```
+
+With a screenshot from the terminal
+assets/junit_main.png
+
