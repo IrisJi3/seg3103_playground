@@ -26,7 +26,7 @@ javac seg3103/seg3103_playground/newmath_java/src/*.java
 Then I run it
 
 ```bash
-java Main
+java -cp ./dist Main
 ```
 Here is an output of the running program
 
