@@ -125,3 +125,30 @@ iex(1)> NewmathEx.div(10, 2)
 With a screenshot from the terminal
 
 assets/elixir_iex.png
+
+### ExUnit
+
+ExUnit is built directly into Elixir (and compiled like above with `mix compile`)
+
+To run the tests
+
+```
+mix test
+```
+
+Here is the output of the tests
+
+```bash
+Compiling 1 file (.ex)
+Generated newmath_ex app
+...
+
+Finished in 0.06 seconds
+1 doctest, 2 tests, 0 failures
+
+Randomized with seed 764000
+```
+
+With a screenshot from the terminal
+
+assets/exunit_main.png
