@@ -26,5 +26,18 @@ javac seg3103/seg3103_playground/newmath_java/src/*.java
 Then I run it
 
 ```bash
-java -cp ./dist Main
+java Main
 ```
+Here is an output of the running program
+
+```bash
+Newmath (type 'exit' to exit program)
+Numerator: 10
+Demoninator: 2
+10 / 2 = 5
+Numerator: exit
+```
+
+With a screenshot from the terminal
+
+![Running Java in the console](assets/java_main.png)
