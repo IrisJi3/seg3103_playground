@@ -43,4 +43,4 @@ Numerator: exit
 
 With a screenshot from the terminal
 
-![Running Java in the console](assets/java_main.png)
+(assets/java_main.png)
