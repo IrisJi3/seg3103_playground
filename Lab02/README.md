@@ -47,9 +47,18 @@ Test Case |  Expected Results             | Actual Results                   | V
 7         | Err3                          | Err3                             | Pass
 8         | Err1                          | Err1                             | Pass
 
-
-
-
+![case1](assets/case1.JPG)
+![case1result](assets/case1result.JPG)
+![case2](assets/case2.JPG)
+![case2result](assets/case2result.JPG)
+![case3](assets/case3.JPG)
+![case3result](assets/case3result.JPG)
+![case4](assets/case4.JPG)
+![case4result](assets/case4result.JPG)
+![case5](assets/case5.JPG)
+![case6](assets/case6.JPG)
+![case7](assets/case7.JPG)
+![case8](assets/case8.JPG)
 
 
 
