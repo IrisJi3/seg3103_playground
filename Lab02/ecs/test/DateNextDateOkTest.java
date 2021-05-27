@@ -75,6 +75,10 @@ public class DateNextDateOkTest
 	   day=1;
 	   Date actualDate = new Date(year,(month+1),day);
 	   Assert.assertEquals(expDate,actualDate);}
+	   else if (day==28){
+	   day=1;
+	   Date actualDate = new Date(year,(month+1),day);
+	   Assert.assertEquals(expDate,actualDate);}   
 	   break;
 	   default:
 	   Date actualDate = new Date(year,month,(day+1));
