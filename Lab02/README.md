@@ -77,7 +77,12 @@ Finally, run test:
 ```bash
 java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
 ```
-The result should be like the following type:
-```
-Here is the output of the tests
+
+Here is the compile result:
+
+![compile](assets/compile.JPG)
+
+Here is the output of the tests:
+
+
 
