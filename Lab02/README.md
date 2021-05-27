@@ -43,7 +43,7 @@ Test Case |  Expected Results             | Actual Results                   | V
 3         | registration request accepted | registration request accepted    | Pass
 4         | registration request accepted | registration request accepted    | Pass
 5         | Err1                          | Err1 and Err3                    | Fail
-6         | Err3                          | Err1 and Err3  and Err6          | Fail
+6         | Err3                          | Err1 and Err3                    | Fail
 7         | Err3                          | Err3                             | Pass
 8         | Err1                          | Err1                             | Pass
 
