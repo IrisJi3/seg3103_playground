@@ -25,4 +25,4 @@ I am running jar file 'user-registration-app-0.1.0.jar' (in `registration`):
 ```bash
 java -jar  user-registration-app-0.1.0.jar
 ```
-![registerjar](assets/registerjar.jpg)
+![registerjar](assets/registerjar.JPG)
