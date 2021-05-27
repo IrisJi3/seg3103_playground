@@ -62,5 +62,22 @@ Test Case |  Expected Results             | Actual Results                   | V
 ![case8](assets/case8.JPG)
 
 
+## Exercise 1:
 
+I am working with JUnit 5 (via Console standalone 1.7.1)
+
+To run JUnit, I need to compile the application , and then compile the test code
+
+```bash
+javac -encoding UTF-8 --source-path test -d dist -cp lib/junit-platform-console-standalone-1.7.1.jar test/*.java src/*.java
+```
+
+Finally, run test:
+
+```bash
+java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+```
+The result should be like the following type:
+```
+Here is the output of the tests
 
