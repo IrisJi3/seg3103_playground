@@ -82,7 +82,6 @@ Here is the result:
 
 ![compile](assets/compile.JPG)
 ![compile2](assets/compile2.JPG)
-![compile3](assets/compile3.JPG)
 ![result](assets/testresult.JPG)
 
 
