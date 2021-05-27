@@ -78,11 +78,12 @@ Finally, run test:
 java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
 ```
 
-Here is the compile result:
+Here is the result:
 
 ![compile](assets/compile.JPG)
-
-Here is the output of the tests:
+![compile2](assets/compile2.JPG)
+![compile3](assets/compile3.JPG)
+![result](assets/testresult.JPG)
 
 
 
