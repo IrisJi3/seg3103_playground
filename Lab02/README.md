@@ -26,3 +26,26 @@ I am running jar file 'user-registration-app-0.1.0.jar' (in `registration`):
 java -jar  user-registration-app-0.1.0.jar
 ```
 ![registerjar](assets/registerjar.JPG)
+![localhost](assets/localhost.JPG)
+
+## Exercise 1:
+I used the test cases given in the tutorial:
+
+Test Case |  Expected Results             | Actual Results                   | Verdict(Pass, Fail, Inconclusive)
+----------|-------------------------------|----------------------------------|----------------------------------
+1         | registration request accepted | registration request accepted    | Pass
+2         | registration request accepted | registration request accepted    | Pass
+3         | registration request accepted | registration request accepted    | Pass
+4         | registration request accepted | registration request accepted    | Pass
+5         | Err1                          | Err1 and Err3                    | Fail
+6         | Err3                          | Err1 and Err3  and Err6          | Fail
+7         | Err3                          | Err3                             | Pass
+8         | Err1                          | Err1                             | Pass
+
+
+
+
+
+
+
+
