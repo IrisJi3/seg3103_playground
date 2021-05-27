@@ -29,7 +29,11 @@ java -jar  user-registration-app-0.1.0.jar
 ![localhost](assets/localhost.JPG)
 
 ## Exercise 1:
-I used the test cases given in the tutorial:
+I used the test cases given in the tutorial
+![testcase1](assets/valid.JPG)
+![testcase2](assets/invalid.JPG)
+
+Here is the results:
 
 Test Case |  Expected Results             | Actual Results                   | Verdict(Pass, Fail, Inconclusive)
 ----------|-------------------------------|----------------------------------|----------------------------------
