@@ -74,6 +74,8 @@ Here is the result:
 ![JDK](Asset/date-after.JPG) 
 ![JDK](Asset/after-detail.JPG) 
 
+The result stopped at 97%.
+
 
 To do the exercise, we import the Date file.\
 
