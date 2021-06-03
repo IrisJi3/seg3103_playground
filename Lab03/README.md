@@ -40,7 +40,9 @@ To run the agent
     java -javaagent:lib/jacocoagent.jar -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
  
  ![JDK](Asset/compile.JPG)
- ![JDK](Asset/compile1.JPG)
+ ![JDK](Asset/compile2.JPG)
+
+before adding any tests, I ran the Jcoco for the tests that were given, and I got the following results
 
 To generate a report
 
