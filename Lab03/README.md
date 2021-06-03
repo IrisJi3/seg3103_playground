@@ -63,7 +63,16 @@ Here is the coverage before efforts to get 100% X coverage:
  ![JDK](Asset/date1.JPG)
 
 According to the report of Date.java, we add more test cases (from above missed branches) to increase coverage:
+1) added September for ThirtyDayMonth().
+2) added century divisible by 400 for isLeapYear().
+3) added February test for isEndOfMonth().
+4) added testcases for equals(object).
+5) added testcases for toString().
+6) added testcases for setday(): >31, isThirtyDayMonth() && day > 30, leap year February >29, etc.
 
+Here is the result:
+![JDK](Asset/date-after.JPG) 
+![JDK](Asset/after-detail.JPG) 
 
 
 To do the exercise, we import the Date file.\
