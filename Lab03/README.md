@@ -85,3 +85,12 @@ We modify date.java based on the red zone above. Here is the compiling result af
 ![JDK](Asset/compile-factor2.JPG) 
 ![JDK](Asset/date-refactor.JPG) 
 ![JDK](Asset/date-only.JPG) 
+
+No changes in this case.
+
+Then run all classes with original datetest.java:
+![JDK](Asset/original-test.JPG) 
+The DateTest.java Coverage is 88%.
+
+
+
