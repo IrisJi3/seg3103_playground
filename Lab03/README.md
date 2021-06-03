@@ -33,3 +33,5 @@ To do the exercise, we import the Date file.\
 You can see the percentage is 84.2 and Date class has the percentage of 79.9. Now we are going to fix code.
 
 ![original](Asset/Properties.png)
+
+After trying to achieve 100% coverage, I fixed code many times, while it does not improved and achieve 71%. Thus, I think this case has been perfect and it is not possible to achieve 100%.
