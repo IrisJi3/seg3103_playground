@@ -32,3 +32,4 @@ To do the exercise, we import the Date file.\
 
 You can see the percentage is 84.2 and Date class has the percentage of 79.9. Now we are going to fix code.
 
+![original](Asset/Properties.png)
