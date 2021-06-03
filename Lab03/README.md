@@ -22,3 +22,8 @@ Then made the right configurations.
 Finally, run the code given us.
 
 ![Original](Asset/Original3.png)
+
+This is all the environment preparation we made.
+
+###Exercise
+To do the exercise, we import the Date file.
