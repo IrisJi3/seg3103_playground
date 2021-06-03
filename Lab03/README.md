@@ -76,12 +76,8 @@ Here is the result:
 The result stopped at 97%. we cannot get 100% because we cant setMonth to <1 and >12 at the same time, and made isEndOfMonth() of the February in leap year =29 false.
 ![JDK](Asset/after-detail.JPG) 
 
-
-To do the exercise, we import the Date file.\
+### Refactor
 
 ![dateoriginal](Asset/DateOriginal.png)
 
-You can see the percentage is 84.2 and Date class has the percentage of 79.9. Now we are going to fix code.
-![original](Asset/Properties.png)
 
-After trying to achieve 100% coverage, I fixed code many times, while it does not improved and achieve 71%. Thus, I think this case has been perfect and it is not possible to achieve 100%.
