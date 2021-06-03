@@ -25,5 +25,5 @@ Finally, run the code given us.
 
 This is all the environment preparation we made.
 
-###Exercise
+### Exercise
 To do the exercise, we import the Date file.
