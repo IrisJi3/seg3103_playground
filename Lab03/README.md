@@ -72,9 +72,9 @@ According to the report of Date.java, we add more test cases (from above missed 
 
 Here is the result:
 ![JDK](Asset/date-after.JPG) 
-![JDK](Asset/after-detail.JPG) 
 
-The result stopped at 97%.
+The result stopped at 97%. we cannot get 100% because we cant setMonth to <1 and >12 at the same time, and made isEndOfMonth() of the February in leap year =29 false.
+![JDK](Asset/after-detail.JPG) 
 
 
 To do the exercise, we import the Date file.\
