@@ -62,6 +62,7 @@ report for date.java class is this:
 Here is the coverage before efforts to get 100% X coverage:
  ![JDK](Asset/date1.JPG)
 
+According to the report of Date.java, we add more test cases (from above missed branches) to increase coverage:
 
 
 
