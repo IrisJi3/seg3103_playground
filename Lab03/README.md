@@ -40,6 +40,8 @@ To run the agent
     java -javaagent:lib/jacocoagent.jar -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
  
  ![JDK](Asset/compile.JPG)
+ ![JDK](Asset/compile1.JPG)
+
 To generate a report
 
     java -jar lib/jacococli.jar report jacoco.exec --classfiles dist --sourcefiles src --html report
