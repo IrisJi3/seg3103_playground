@@ -15,3 +15,10 @@ To use Jacoco, we need to fix the version of eclipse from JRE to JDK, so I downl
 
 ![JDK](Asset/JDK.png)
 
+Then made the right configurations.
+
+![Run](Asset/Run.png)
+
+Finally, run the code given us.
+
+![Original](Asset/Original3.png)
