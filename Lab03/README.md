@@ -10,4 +10,7 @@
 | Student 2 | Iris Ji (300061354) |
 
 ## Report
-### Process of debug
+### Environment equipment
+To use Jacoco, we need to fix the version of eclipse from JRE to JDK, so I downloaded JDK for Jacoco.
+
+![JDK](
