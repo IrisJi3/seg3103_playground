@@ -54,10 +54,11 @@ To open the report
     
       ./report/index.html
 
+report for date.java class is this: 
+
 ![JDK](Asset/default1.JPG)
  ![JDK](Asset/default.JPG)      
    
-report for date.java class is this: 
 
 
 To do the exercise, we import the Date file.\
