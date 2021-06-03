@@ -48,9 +48,17 @@ To generate a report
 
     java -jar lib/jacococli.jar report jacoco.exec --classfiles dist --sourcefiles src --html report
 
+![JDK](Asset/report-folder.JPG)
+
 To open the report
     
       ./report/index.html
+
+![JDK](Asset/default1.JPG)
+ ![JDK](Asset/default.JPG)      
+   
+report for date.java class is this: 
+
 
 To do the exercise, we import the Date file.\
 
