@@ -11,6 +11,21 @@
 
 ## Report
 ### Environment equipment
+
+To compile the application:     
+      
+          javac -encoding UTF-8 --source-path src -d dist src/*.java
+
+To compile the tests
+
+    javac -encoding UTF-8 --source-path test -d dist -cp lib/junit-platform-console-standalone-1.7.1.jar test/*.java src/*.java
+
+To run the agent
+
+    java -javaagent:lib/jacocoagent.jar -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+ 
+ ![JDK](Asset/compile.JPG)
+ 
 To use Jacoco, we need to fix the version of eclipse from JRE to JDK, so I downloaded JDK for Jacoco.
 
 ![JDK](Asset/JDK.png)
@@ -24,6 +39,14 @@ Finally, run the code given us.
 ![Original](Asset/Original3.png)
 
 This is all the environment preparation we made.
+
+To generate a report
+
+    java -jar lib/jacococli.jar report jacoco.exec --classfiles dist --sourcefiles src --html report
+
+To open the report
+    
+      ./report/index.html
 
 ### Exercise
 To do the exercise, we import the Date file.\
