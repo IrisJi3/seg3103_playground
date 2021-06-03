@@ -26,4 +26,7 @@ Finally, run the code given us.
 This is all the environment preparation we made.
 
 ### Exercise
-To do the exercise, we import the Date file.
+To do the exercise, we import the Date file.\
+
+![dateoriginal](Asset/DateOriginal.png)
+
