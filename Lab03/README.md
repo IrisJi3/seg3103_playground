@@ -8,3 +8,6 @@
 | TA | Henry Chen |
 | Student 1 | Cynthia Sheng (30091655) |
 | Student 2 | Iris Ji (300061354) |
+
+##Report
+###Process of debug
