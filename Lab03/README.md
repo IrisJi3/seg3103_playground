@@ -80,4 +80,4 @@ The result stopped at 97%. we cannot get 100% because we cant setMonth to <1 and
 
 ![dateoriginal](Asset/DateOriginal.png)
 
-
+We modify date.java based on the red zone above.
