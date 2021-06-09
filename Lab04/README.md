@@ -12,5 +12,12 @@
 
 ## Test Driven Development
 
+To compile:
 
+    javac -encoding UTF-8 --source-path test -d dist -cp lib/junit-platform-console-standalone-1.7.1.jar test/*.java src/*.java
 
+Then run the tests:
+
+```
+java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
+```
