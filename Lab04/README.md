@@ -90,3 +90,19 @@ Here is the commit of 1st group:
 ![image](assets/group1.JPG)
 
 
+### Commit 2 - test_defaultBoard():
+
+Here is to test whether it fails when a 2x2 2D array with all elements are "_".
+
+![TDD](assets/fail2.JPG)
+
+Then, change it back:
+
+![TDD](assets/pass2.JPG)
+
+Here is the commit of 2nd group:
+
+![image](assets/group2.JPG)
+
+
+
