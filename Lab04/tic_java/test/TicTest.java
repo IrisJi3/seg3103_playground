@@ -8,8 +8,8 @@ class TicTest {
 	Tic obj = new Tic();
 	@Test
 	void test_defaultBoard() {
-		String[] [] map = {{"_","_","_"},{"_","0","_"},{"_","_","_"}};
-		//String[] [] map = {{"_","_","_"},{"_","_","_"},{"_","_","_"}};
+		//String[] [] map = {{"_","_","_"},{"_","0","_"},{"_","_","_"}};
+		String[] [] map = {{"_","_","_"},{"_","_","_"},{"_","_","_"}};
 		assertEquals(map,obj.default_Board());
 	}
 }
