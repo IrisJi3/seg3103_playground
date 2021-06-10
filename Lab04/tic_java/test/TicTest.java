@@ -47,7 +47,7 @@ class TicTest {
 	
 	@Test
 	void test_winner() {
-      assertEquals(true,!obj.winner());
+      assertEquals(true,obj.winner());
 	}
 	
 }
