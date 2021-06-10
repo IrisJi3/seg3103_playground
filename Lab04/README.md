@@ -202,3 +202,13 @@ change to expected result:
 Here is the commit of 10th group:
 
 ![image](assets/group10.JPG)
+
+
+### Commit11 - Refactor:
+Refactor index name into row, column. The test results are the same (all pass):
+![TDD](assets/pass11.JPG)
+
+Here is the commit of 11th group:
+
+![image](assets/group11.JPG)
+
