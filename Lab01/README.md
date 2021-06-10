@@ -88,7 +88,7 @@ Test run finished after 83 ms
 ```
 
 With a screenshot from the terminal
-![localhost](assets/junit_main.PNG)
+![junit](assets/junit_main.PNG)
 
 ### Elixir
 
@@ -124,7 +124,8 @@ iex(1)> NewmathEx.div(10, 2)
 
 With a screenshot from the terminal
 
-![localhost](assets/elixir_iex.PNG)
+
+![iex](assets/elixir_iex.PNG)
 
 ### ExUnit
 
