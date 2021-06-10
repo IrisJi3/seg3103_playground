@@ -15,7 +15,7 @@ class TicTest {
 	@Test
 	void test_emptyBoard() {
 		
-	String[] [] result2 = {{"_","_"},{"_","_","_"}};	
+	String[] [] result2 = {{"_","_"},{"_","_"}};	
 	assertEquals(result2, obj.emptyBoard(2,2));		
 	}
 	
