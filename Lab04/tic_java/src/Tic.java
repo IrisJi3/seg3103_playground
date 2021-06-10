@@ -4,7 +4,7 @@ public class Tic {
 	
 	
 	static String[][] def_board=new String[3][3];
-
+    static String [][] map=Tic.default_Board();
 	
 	public static String[][] default_Board(){
 		
@@ -31,6 +31,21 @@ public class Tic {
 		
 		return (b.length)*(b[0].length);
 	}
+	
+	public static String boardPositions (boolean player, int x, int y) {
+		String sign = "_";
+		if(player) 
+			sign ="X";
+		else 
+			sign ="O";
+		
+		if(Tic.map[x][y]=="X" || Tic.map[x][y]=="O")
+		r	eturn "N";
+		else 
+			Tic.map[x][y] = sign;
+	
+	return Tic.map [x][y];
+}
 	
 	
 }
