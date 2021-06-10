@@ -88,7 +88,7 @@ Test run finished after 83 ms
 ```
 
 With a screenshot from the terminal
-![junit](assets/junit-Main.PNG)
+![junit](assets/Junit-Main.PNG)
 
 ### Elixir
 
