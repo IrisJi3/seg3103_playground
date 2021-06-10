@@ -27,9 +27,9 @@ public class Tic {
 		return board;
 	}
 	
-	public static int boardSize(int h, int k){
+	public static int boardSize(String b[][]){
 		
-		return h*k;
+		return (b.length)*(b[0].length);
 	}
 	
 	

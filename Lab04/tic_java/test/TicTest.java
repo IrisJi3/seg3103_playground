@@ -21,7 +21,8 @@ class TicTest {
 	
 	@Test
 	void test_boardSize() {
-	    assertEquals(4,obj.boardSize(2,2));
+		String[][] result={{"_","_"},{"_","_"}};
+	    assertEquals(3,obj.boardSize(result));
 	}
 	
 }
