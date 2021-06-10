@@ -41,8 +41,8 @@ class TicTest {
 		assertEquals("O", obj.boardPositions(false, 2, 0));
 		assertEquals("X", obj.boardPositions(true, 2, 1));
 		assertEquals("O", obj.boardPositions(false, 2, 2));
-		//assertEquals("X", obj.boardPositions(true, 2, 2));
-		assertEquals("N", obj.boardPositions(true, 2, 2));
+		assertEquals("O", obj.boardPositions(true, 2, 2));
+		//assertEquals("N", obj.boardPositions(true, 2, 2));
 	}
 	
 }
