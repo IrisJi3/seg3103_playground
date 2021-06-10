@@ -85,5 +85,8 @@ String[] [] map = {{"_","_","_"},{"_","_","_"},{"_","_","_"}};
 It passed now:
 ![TDD](assets/pass1.JPG)
 
+Here is the commit of 1st group:
+
+![image](assets/group1.JPG)
 
 
