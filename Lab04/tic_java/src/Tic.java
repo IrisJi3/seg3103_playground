@@ -47,8 +47,10 @@ public class Tic {
 	return Tic.map [x][y];
 	}
 	
-	public static boolean winner() {
+	public static boolean winner(String[][] para) {
 	
+		para=Tic.map;
+		
 	if (Tic.map [0][0]=="X" && Tic.map [1][0]=="X" && Tic.map [2][0]=="X")
 		return true;
 	else if (Tic.map [0][0]=="X" && Tic.map [1][1]=="X" && Tic.map [2][2]=="X")
@@ -57,9 +59,11 @@ public class Tic {
 	    return true;
 	else if (Tic.map [1][0]=="X" && Tic.map [1][1]=="X" && Tic.map [1][2]=="X")
 	    return true;
+	else if (Tic.map [0][1]=="X" && Tic.map [1][1]=="X" && Tic.map [2][1]=="X")
+	    return true;
 	else if (Tic.map [2][0]=="X" && Tic.map [2][1]=="X" && Tic.map [2][2]=="X")
 	    return true;
-	else if (Tic.map [2][0]=="X" && Tic.map [1][1]=="X" && Tic.map [0][2]=="X")
+	else if (Tic.map [0][2]=="X" && Tic.map [1][2]=="X" && Tic.map [2][2]=="X")
 	    return true;
 	else 
 	    return false;

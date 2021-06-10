@@ -47,7 +47,12 @@ class TicTest {
 	
 	@Test
 	void test_winner() {
-      assertEquals(true,obj.winner());
+		String[][] result= {
+				{"_","X","O"},
+				{"_","X","_"},
+				{"O","X","O"}
+		};	
+		assertEquals(true,obj.winner(result));
 	}
 	
 }
