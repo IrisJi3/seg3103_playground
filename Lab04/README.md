@@ -17,7 +17,7 @@ I am running Elixir 12.1 with Erlang 23
 ```bash
 elixir --version
 ```
-![version](assets/elixir_version.JPG)
+![version](assets/elixir-version.JPG)
 
 To run the Elixir program (in `fizzbuzz` and `tic`), first I compile it
 
