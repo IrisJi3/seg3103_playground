@@ -27,4 +27,10 @@ public class Tic {
 		return board;
 	}
 	
+	public static int boardSize(int h, int k){
+		
+		return h*k;
+	}
+	
+	
 }

@@ -19,6 +19,9 @@ class TicTest {
 	assertEquals(result2, obj.emptyBoard(2,2));		
 	}
 	
-	
+	@Test
+	void test_boardSize() {
+	    assertEquals(3,obj.boardSize(2,2));
+	}
 	
 }
