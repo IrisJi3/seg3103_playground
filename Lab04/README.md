@@ -116,7 +116,7 @@ Then, match both:
 
 Here is the commit of 3nd group:
 
-![image](assets/group2.JPG)
+![image](assets/group3.JPG)
 
 ### Commit 4 - test_emptyBoard():
 
