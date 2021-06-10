@@ -180,7 +180,7 @@ Here is the commit of 8th group:
 winner() showed true if player1 win.
 
 First, Fail by assert 'false' when player1 win.
-![TDD](assets/fail9.JPG)
+![TDD](assets/fail91.JPG)
 
 change to expected result:
 ![TDD](assets/pass9.JPG)
