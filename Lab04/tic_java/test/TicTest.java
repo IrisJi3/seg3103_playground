@@ -25,7 +25,7 @@ class TicTest {
 	    assertEquals(16,obj.boardSize(result));
 	}
 	
-		@Test
+	@Test
 	void test_boardPositions() {
 		/*
 		 _ X O
@@ -43,6 +43,11 @@ class TicTest {
 		assertEquals("O", obj.boardPositions(false, 2, 2));
 		//assertEquals("O", obj.boardPositions(true, 2, 2));
 		assertEquals("N", obj.boardPositions(true, 2, 2));
+	}
+	
+	@Test
+	void test_winner() {
+      assertEquals(true,obj.winner());
 	}
 	
 }
