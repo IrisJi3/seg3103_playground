@@ -17,7 +17,7 @@ I am running Elixir 12.1 with Erlang 23
 ```bash
 elixir --version
 ```
-![version](assets/elixir_version.PNG)
+![version](assets/elixir_version.JPG)
 
 To run the Elixir program (in `fizzbuzz` and `tic`), first I compile it
 
@@ -33,8 +33,8 @@ iex -S mix
 
 Here is an output of the running program with a screenshot from the terminal
 
-![compile](assets/elixir_fb.PNG)
-![compile](assets/elixir_tic.PNG)
+![compile](assets/elixir-fb.JPG)
+![compile](assets/elixir-tic.JPG)
 
 ### ExUnit
 
@@ -47,8 +47,8 @@ mix test
 ```
 
 Here is the output of the tests, with a screenshot from the terminal
-
-![test](assets/exunit_test.PNG)
+![test](assets/elixir-fbtest.JPG)
+![test](assets/elixir-tictest.JPG)
 
 
 ## Test Driven Development
