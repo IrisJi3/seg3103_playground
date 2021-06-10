@@ -193,7 +193,7 @@ Here is the commit of 9th group:
 
 winner() showed false if player2 win.
 
-First, Fail by assert 'true' when player2 win.
+First, Fail by assert 'true' when player2 lose.
 ![TDD](assets/fail10.JPG)
 
 change to expected result:
