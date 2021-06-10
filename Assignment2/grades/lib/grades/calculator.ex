@@ -27,33 +27,31 @@ defmodule Grades.Calculator do
 	  {avg_homework, avg_labs} 
 	end
 
-  # Refactor for Question 2.2
+  # Refactor for Q2.2
   def failed_to_participate(avg_homework, avg_exams, num_labs) do 
     avg_homework < 0.4 || avg_exams < 0.4 || num_labs < 3
   end
 
-  # Refactor for Question 2.3
+  # Refactor for Q2.3
   def calculate_grade(avg_labs, avg_homework, midterm, final) do 
     0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
   end
   
-	def letter_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
-	
-	{avg_homework, avg_labs} = avg(homework, labs)
-	
-    avg_exams = (midterm + final) / 2
-
-    num_labs =
+  # Refactor for Q2.4
+  def avg_exams(midterm, final) do
+    (midterm + final) / 2
+  end
+  
+  # Refactor for Q2.4
+  def num_labs(labs) do
       labs
       |> Enum.reject(fn mark -> mark < 0.25 end)
       |> Enum.count()
-
-    if failed_to_participate(avg_homework, avg_exams, num_labs) do
-      "EIN"
-    else
-      mark = calculate_grade(avg_labs, avg_homework, midterm, final)
-
-      cond do
+  end
+  
+  # Refactor for Q2.4
+  def grading_letter(mark) do
+    cond do
         mark > 0.895 -> "A+"
         mark > 0.845 -> "A"
         mark > 0.795 -> "A-"
@@ -66,26 +64,10 @@ defmodule Grades.Calculator do
         mark > 0.395 -> "E"
         :else -> "F"
       end
-    end
   end
-
-  def numeric_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
-    
-	# Refactored for Question 2.1
-    {avg_homework, avg_labs} = avg(homework, labs)
-
-    avg_exams = (midterm + final) / 2
-
-    num_labs =
-      labs
-      |> Enum.reject(fn mark -> mark < 0.25 end)
-      |> Enum.count()
-
-    if failed_to_participate(avg_homework, avg_exams, num_labs) do
-      0
-    else
-      mark = calculate_grade(avg_labs, avg_homework, midterm, final)
-
+  
+   # Refactor for Q 2.4
+  def grading_point(mark) do  
       cond do
         mark > 0.895 -> 10
         mark > 0.845 -> 9
@@ -99,6 +81,41 @@ defmodule Grades.Calculator do
         mark > 0.395 -> 1
         :else -> 0
       end
+  end
+  
+	def letter_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
+	
+	{avg_homework, avg_labs} = avg(homework, labs)
+	
+    avg_exams = avg_exams(midterm, final)
+
+    num_labs = num_labs(labs)
+
+
+    if failed_to_participate(avg_homework, avg_exams, num_labs) do
+      "EIN"
+    else
+      mark = calculate_grade(avg_labs, avg_homework, midterm, final)
+     
+	 grading_letter(mark)
+    end
+  end
+
+  def numeric_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
+    
+    {avg_homework, avg_labs} = avg(homework, labs)
+
+    avg_exams = avg_exams(midterm, final)
+
+    num_labs = num_labs(labs)
+
+
+    if failed_to_participate(avg_homework, avg_exams, num_labs) do
+      0
+    else
+      mark = calculate_grade(avg_labs, avg_homework, midterm, final)
+
+     grading_point(mark) 
     end
   end
 end
