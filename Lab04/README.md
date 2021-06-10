@@ -12,7 +12,7 @@
 
 ### Elixir
 
-I am running Elixir 12.1 with Erlang 23
+I am running Elixir 12.0 with Erlang 22
 
 ```bash
 elixir --version
