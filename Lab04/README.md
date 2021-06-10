@@ -104,5 +104,19 @@ Here is the commit of 2nd group:
 
 ![image](assets/group2.JPG)
 
+### Commit 3 - test_emptyBoard():
 
+Here is to test if the shape of board is correct. 
+
+First, Failed by let emptyBoard() create a 2x3 array and test with a 3x3 array:
+![TDD](assets/fail3.JPG)
+
+Then, match both:
+![TDD](assets/pass3.JPG)
+
+Here is the commit of 3nd group:
+
+![image](assets/group3.JPG)
+
+### Commit 4 - test_emptyBoard():
 
