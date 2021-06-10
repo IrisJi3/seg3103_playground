@@ -62,3 +62,28 @@ Then run the tests:
 ```
 java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --scan-class-path
 ```
+
+
+### Commit 1 - test_defaultBoard():
+
+function of default_Board() creates a 3x3 2D array with all elements are "_".
+
+Make it fail first:
+```
+String[] [] map = {{"_","_","_"},{"_","0","_"},{"_","_","_"}};
+```
+
+Failed because using "0" instead of "_".
+![TDD](assets/fail1.JPG)
+
+Then, change it to all "_" 
+
+```
+String[] [] map = {{"_","_","_"},{"_","_","_"},{"_","_","_"}};
+```
+
+It passed now:
+![TDD](assets/pass1.JPG)
+
+
+
