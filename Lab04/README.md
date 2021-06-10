@@ -7,7 +7,7 @@
 | Professor | Andrew Forward |
 | TA | Nazanin Bayati |
 | Student 1 | Xia (Cynthia) Sheng (300091655) |
-| Student 2 | Iris Ji (300061354)) |
+| Student 2 | Xinyu Ji (300061354)) |
 
 
 ### Elixir
