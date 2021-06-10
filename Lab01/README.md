@@ -88,7 +88,7 @@ Test run finished after 83 ms
 ```
 
 With a screenshot from the terminal
-assets/junit_main.png
+![junit](assets/Junit-Main.PNG)
 
 ### Elixir
 
@@ -124,7 +124,8 @@ iex(1)> NewmathEx.div(10, 2)
 
 With a screenshot from the terminal
 
-assets/elixir_iex.png
+
+![iex](assets/elixir-iex.PNG)
 
 ### ExUnit
 
@@ -151,4 +152,4 @@ Randomized with seed 764000
 
 With a screenshot from the terminal
 
-assets/exunit_main.png
+![localhost](assets/exunit_main.PNG)
