@@ -120,3 +120,41 @@ Here is the commit of 4th group:
 ![image](assets/group4.JPG)
 
 
+### Commit 5 - test_boardSize():
+
+let boardSize() expect 4 elements, and assert 3. Fail:
+![TDD](assets/fail5.JPG)
+
+Now change to 4. Passed:
+![TDD](assets/pass5.JPG)
+
+Here is the commit of 5th group:
+
+![image](assets/group5.JPG)
+
+### Commit 6 - test_boardSize():
+
+This time use emptyBoard() to create a new board and test the size.
+
+Expect 16 elements, and assert 13. Fail:
+
+![TDD](assets/fail6.JPG)
+
+Now change to 16. Passed:
+![TDD](assets/pass6.JPG)
+
+Here is the commit of 5th group:
+
+![image](assets/group6.JPG)
+
+
+
+
+
+
+
+
+
+
+
+
