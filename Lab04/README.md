@@ -109,3 +109,14 @@ Here is the commit of 3nd group:
 
 ### Commit 4 - test_emptyBoard():
 
+Each array should have the same size in board. If the board is not square, the test fails:
+![TDD](assets/fail4.JPG)
+
+Then, change it back to the same size:
+![TDD](assets/pass4.JPG)
+
+Here is the commit of 4th group:
+
+![image](assets/group4.JPG)
+
+
