@@ -143,16 +143,25 @@ Expect 16 elements, and assert 13. Fail:
 Now change to 16. Passed:
 ![TDD](assets/pass6.JPG)
 
-Here is the commit of 5th group:
+Here is the commit of 6th group:
 
 ![image](assets/group6.JPG)
 
+### Commit 7 - test_boardPositions():
 
+Test if it prevents input into slot that already had entry. Fail when an "X" tried to input into slot that had "O" already:
 
+![TDD](assets/fail7.JPG)
 
+Now change to expected "N" for this situation. Passed:
 
+![TDD](assets/pass7.JPG)
 
+Here is the commit of 7th group:
 
+![image](assets/group7.JPG)
+
+### Commit 8 - test_boardPositions():
 
 
 
