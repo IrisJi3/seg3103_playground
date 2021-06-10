@@ -10,6 +10,47 @@
 | Student 2 | Iris Ji (300061354)) |
 
 
+### Elixir
+
+I am running Elixir 12.1 with Erlang 23
+
+```bash
+elixir --version
+```
+![version](assets/elixir_version.PNG)
+
+To run the Elixir program (in `fizzbuzz` and `tic`), first I compile it
+
+```bash
+mix compile
+```
+
+Then I run it
+
+```bash
+iex -S mix
+```
+
+Here is an output of the running program with a screenshot from the terminal
+
+![compile](assets/elixir_fb.PNG)
+![compile](assets/elixir_tic.PNG)
+
+### ExUnit
+
+ExUnit is built directly into Elixir (and compiled like above with `mix compile`)
+
+To run the tests
+
+```
+mix test
+```
+
+Here is the output of the tests, with a screenshot from the terminal
+
+![test](assets/exunit_test.PNG)
+
+
 ## Test Driven Development
 
 To compile:
