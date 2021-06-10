@@ -163,7 +163,42 @@ Here is the commit of 7th group:
 
 ### Commit 8 - test_boardPositions():
 
+This time, is it allow to have duplicate entry for the same slot. Here, test if it allow input "O" into the slot that had "O" already. Fail:
 
+![TDD](assets/fail8.JPG)
 
+Now change to expected "N" for this situation. Passed:
 
+![TDD](assets/pass8.JPG)
 
+Here is the commit of 8th group:
+
+![image](assets/group8.JPG)
+
+### Commit 9 - test_winner():
+
+winner() showed true if player1 win.
+
+First, Fail by assert 'false' when player1 win.
+![TDD](assets/fail9.JPG)
+
+change to expected result:
+![TDD](assets/pass9.JPG)
+
+Here is the commit of 9th group:
+
+![image](assets/group9.JPG)
+
+### Commit10 - test_winner():
+
+winner() showed false if player2 win.
+
+First, Fail by assert 'true' when player2 win.
+![TDD](assets/fail10.JPG)
+
+change to expected result:
+![TDD](assets/pass10.JPG)
+
+Here is the commit of 10th group:
+
+![image](assets/group10.JPG)
