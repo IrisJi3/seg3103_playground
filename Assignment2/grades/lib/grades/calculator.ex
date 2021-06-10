@@ -1,24 +1,15 @@
 defmodule Grades.Calculator do
   def percentage_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
-    avg_homework =
-      if Enum.count(homework) == 0 do
-        0
-      else
-        Enum.sum(homework) / Enum.count(homework)
-      end
 
-    avg_labs =
-      if Enum.count(labs) == 0 do
-        0
-      else
-        Enum.sum(labs) / Enum.count(labs)
-      end
+    # Refactored for Q2.1
+    {avg_homework, avg_labs} = avg(homework, labs)
 
-    mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+    mark = calculate_grade(avg_labs, avg_homework, midterm, final)
     round(mark * 100)
   end
 
-  def letter_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
+	# Refactored for Q2.1
+  def avg(homework, labs) do
     avg_homework =
       if Enum.count(homework) == 0 do
         0
@@ -32,7 +23,24 @@ defmodule Grades.Calculator do
       else
         Enum.sum(labs) / Enum.count(labs)
       end
+	  
+	  {avg_homework, avg_labs} 
+	end
 
+  # Refactor for Question 2.2
+  def failed_to_participate(avg_homework, avg_exams, num_labs) do 
+    avg_homework < 0.4 || avg_exams < 0.4 || num_labs < 3
+  end
+
+  # Refactor for Question 2.3
+  def calculate_grade(avg_labs, avg_homework, midterm, final) do 
+    0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+  end
+  
+	def letter_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
+	
+	{avg_homework, avg_labs} = avg(homework, labs)
+	
     avg_exams = (midterm + final) / 2
 
     num_labs =
@@ -40,10 +48,10 @@ defmodule Grades.Calculator do
       |> Enum.reject(fn mark -> mark < 0.25 end)
       |> Enum.count()
 
-    if avg_homework < 0.4 || avg_exams < 0.4 || num_labs < 3 do
+    if failed_to_participate(avg_homework, avg_exams, num_labs) do
       "EIN"
     else
-      mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+      mark = calculate_grade(avg_labs, avg_homework, midterm, final)
 
       cond do
         mark > 0.895 -> "A+"
@@ -62,19 +70,9 @@ defmodule Grades.Calculator do
   end
 
   def numeric_grade(%{homework: homework, labs: labs, midterm: midterm, final: final}) do
-    avg_homework =
-      if Enum.count(homework) == 0 do
-        0
-      else
-        Enum.sum(homework) / Enum.count(homework)
-      end
-
-    avg_labs =
-      if Enum.count(labs) == 0 do
-        0
-      else
-        Enum.sum(labs) / Enum.count(labs)
-      end
+    
+	# Refactored for Question 2.1
+    {avg_homework, avg_labs} = avg(homework, labs)
 
     avg_exams = (midterm + final) / 2
 
@@ -83,10 +81,10 @@ defmodule Grades.Calculator do
       |> Enum.reject(fn mark -> mark < 0.25 end)
       |> Enum.count()
 
-    if avg_homework < 0.4 || avg_exams < 0.4 || num_labs < 3 do
+    if failed_to_participate(avg_homework, avg_exams, num_labs) do
       0
     else
-      mark = 0.2 * avg_labs + 0.3 * avg_homework + 0.2 * midterm + 0.3 * final
+      mark = calculate_grade(avg_labs, avg_homework, midterm, final)
 
       cond do
         mark > 0.895 -> 10
