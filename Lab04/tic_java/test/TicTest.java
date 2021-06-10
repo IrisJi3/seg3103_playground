@@ -22,7 +22,7 @@ class TicTest {
 	@Test
 	void test_boardSize() {
 		String[][] result= obj.emptyBoard(4, 4);
-	    assertEquals(13,obj.boardSize(result));
+	    assertEquals(16,obj.boardSize(result));
 	}
 	
 }
