@@ -39,13 +39,13 @@ public class Tic {
 		else 
 			sign ="O";
 		
-		if(Tic.map[x][y]=="X" || Tic.map[x][y]=="O")
-		r	eturn "N";
-		else 
-			Tic.map[x][y] = sign;
-	
+		if(Tic.map[x][y]=="_")
+			return Tic.map[x][y] = sign;
+		else if(Tic.map[x][y]=="X" || Tic.map[x][y]=="O")
+			return "N";					
+		
 	return Tic.map [x][y];
-}
+	}
 	
 	
 }
