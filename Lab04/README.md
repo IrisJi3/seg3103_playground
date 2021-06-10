@@ -146,9 +146,7 @@ Expect 16 elements, and assert 13. Fail:
 Now change to 16. Passed:
 ![TDD](assets/pass6.JPG)
 
-Here is the commit of 6th group:
 
-![image](assets/group6.JPG)
 
 ### Commit 7 - test_boardPositions():
 
@@ -160,9 +158,7 @@ Now change to expected "N" for this situation. Passed:
 
 ![TDD](assets/pass7.JPG)
 
-Here is the commit of 7th group:
 
-![image](assets/group7.JPG)
 
 ### Commit 8 - test_boardPositions():
 
@@ -174,9 +170,7 @@ Now change to expected "N" for this situation. Passed:
 
 ![TDD](assets/pass8.JPG)
 
-Here is the commit of 8th group:
 
-![image](assets/group8.JPG)
 
 ### Commit 9 - test_winner():
 
@@ -188,9 +182,7 @@ First, Fail by assert 'false' when player1 win.
 change to expected result:
 ![TDD](assets/pass9.JPG)
 
-Here is the commit of 9th group:
 
-![image](assets/group9.JPG)
 
 ### Commit10 - test_winner():
 
@@ -202,9 +194,7 @@ First, Fail by assert 'true' when player2 lose.
 change to expected result:
 ![TDD](assets/pass10.JPG)
 
-Here is the commit of 10th group:
 
-![image](assets/group10.JPG)
 
 
 ### Commit11 - Refactor:
