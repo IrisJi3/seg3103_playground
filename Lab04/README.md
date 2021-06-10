@@ -66,23 +66,24 @@ java -jar lib/junit-platform-console-standalone-1.7.1.jar --class-path dist --sc
 
 ### Commit 1 - test_defaultBoard():
 
-function of default_Board() creates a 3*3 array with all elements are "_".
+function of default_Board() creates a 3x3 2D array with all elements are "_".
 
-```bash
+Make it fail first:
+```
 String[] [] map = {{"_","_","_"},{"_","0","_"},{"_","_","_"}};
-```bash
+```
 
 Failed because using "0" instead of "_".
-![test](assets/fail1.JPG)
+![TDD](assets/fail1.JPG)
 
 Then, change it to all "_" 
 
-```bash
+```
 String[] [] map = {{"_","_","_"},{"_","_","_"},{"_","_","_"}};
-```bash
+```
 
 It passed now:
-![test](assets/pass1.JPG)
+![TDD](assets/pass1.JPG)
 
 
 
