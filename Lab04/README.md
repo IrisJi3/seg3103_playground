@@ -114,3 +114,9 @@ First, Failed by let emptyBoard() create a 2x3 array and test with a 3x3 array:
 Then, match both:
 ![TDD](assets/pass3.JPG)
 
+Here is the commit of 3nd group:
+
+![image](assets/group2.JPG)
+
+### Commit 4 - test_emptyBoard():
+
