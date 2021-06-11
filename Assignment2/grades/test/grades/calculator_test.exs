@@ -187,7 +187,7 @@ end
 					midterm: 0.75,
 					final: 0.75
 				})
-				})
+				
 	end
   	test "test_8" do
 		assert 8 ==
