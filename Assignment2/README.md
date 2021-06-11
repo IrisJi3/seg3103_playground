@@ -1,4 +1,4 @@
-# seg3103_playground
+# seg3103_Assignment
 | Outline | Value |
 | --- | --- |
 | Course | SEG 3103 |
