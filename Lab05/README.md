@@ -51,7 +51,7 @@ java --add-opens java.base/java.lang=ALL-UNNAMED -jar lib/junit-platform-console
 Here is the result:
 ![test](assets/junit.JPG)
 
-According to the error message, the error occurred in isMentionned_dontReturnSubstringMatches(), " expected: <false> but was: <true>".  This is because  "meat" contains "me", so no matter if the loadTweet return @meat or @me. isMentionned("me") will always be true. Therefore, we need to change the code of isMentioned() in Twitter.java to ensure string after "@" should 100% match. We use equal() instead of contain():
+According to the error message, the error occurred in isMentionned_dontReturnSubstringMatches(), " expected: <false> but was: <true>".  This is because  "meat" contains "me", so no matter if the loadTweet return @meat or @me. isMentionned("me") will always be true. Therefore, we need to change the code of isMentioned() in Twitter.java to ensure string after "@" should 100% match. We use equals() instead of contains():
 ![test](assets/equal.JPG)
   
 run again, it works:
