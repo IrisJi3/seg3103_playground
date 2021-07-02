@@ -37,7 +37,7 @@ There is an error occurred when open http://localhost:4000/ and the button did't
 And it works now:
 ![part1](assets/random1.JPG)
 
-Then, replace the code with assignment2. Run again. Here is another error occured (complain module page_live.ex at 3rd parameter of function handle_event - socket)
+Then, replace the code with assignment2. Run again. Here is Arithmatic error occured (complain module page_live.ex at 3rd parameter of function handle_event - socket)
 ![part1](assets/error.JPG)
 
 According to page_live.ex, the socket read input of tuples, so the function avg does not work (also shown in CMD: "State: %{components: {%{}, %{}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{flash: %{}, grades: %{final: nil, homework: [], labs: [], midterm: nil}, ...")
