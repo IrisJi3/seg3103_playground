@@ -49,6 +49,7 @@ Use the code of mock_partial_object() to implement the 4 missing test cases in T
 java --add-opens java.base/java.lang=ALL-UNNAMED -jar lib/junit-platform-console-standalone-1.7.1.jar -cp dist;lib/easymock-4.3.jar;lib/objenesis-3.2.jar --scan-class-path
 ```
 Here is the result:
+
 ![test](assets/junit.JPG)
 
 According to the error message, the error occurred in isMentionned_dontReturnSubstringMatches(), " expected: <false> but was: <true>".  This is because  "meat" contains "me", so no matter if the loadTweet return @meat or @me. isMentionned("me") will always be true. Therefore, we need to change the code of isMentioned() in Twitter.java to ensure string after "@" should 100% match. We use equals() instead of contains():
