@@ -10,6 +10,23 @@
 | Student 2 | Xinyu Ji (300061354)) |
 
 
-### Elixir
+### System
 
-I am running Elixir 12.0 with Erlang 22
+Windows 10
+
+### setup
+run the following code in grade folder:
+```bash
+mix deps.get
+cd assets && npm install
+```
+![version](assets/deps-get.JPG)
+![version](assets/npm-install.JPG)
+
+Then we can run
+```bash
+mix phx.server
+```
+and login http://localhost:4000/ for lab05 part 1.
+
+### Stub
