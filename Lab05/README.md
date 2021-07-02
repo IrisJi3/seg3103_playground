@@ -42,3 +42,5 @@ Then, replace the code with assignment2. Run again. Here is Arithmatic error occ
 
 According to page_live.ex, the socket read input of tuples, so the function avg does not work (also shown in CMD: "State: %{components: {%{}, %{}, 1}, join_ref: "4", serializer: Phoenix.Socket.V2.JSONSerializer, socket: #Phoenix.LiveView.Socket<assigns: %{flash: %{}, grades: %{final: nil, homework: [], labs: [], midterm: nil}, ...")
 ![part1](assets/socket.JPG)
+
+### Mocks
