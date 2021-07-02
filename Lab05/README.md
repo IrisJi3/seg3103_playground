@@ -56,8 +56,9 @@ According to the error message, the error occurred in isMentionned_dontReturnSub
 ![test](assets/equal.JPG)
   
 run again, it works:
+
 ![test](assets/junit2.JPG)
- 
+ I dont' know why Eclipse works, but CMD didn't, so I attached the JUnit test result in Eclipse.
 
   
 
