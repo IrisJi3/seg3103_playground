@@ -44,3 +44,9 @@ According to page_live.ex, the socket read input of tuples, so the function avg 
 ![part1](assets/socket.JPG)
 
 ### Mocks
+Use the code of mock_partial_object() to implement the 4 missing test cases in TwitterTest.java. Run the test without any change in Twitter.java. 
+```bash
+java --add-opens java.base/java.lang=ALL-UNNAMED -jar lib/junit-platform-console-standalone-1.7.1.jar -cp dist;lib/easymock-4.3.jar;lib/objenesis-3.2.jar --scan-class-path
+```
+Here is the result:
+![test](assets/junit.JPG)
