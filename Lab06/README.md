@@ -46,7 +46,7 @@ http://localhost:8080 didn't work:
 
 ![maven](assets/8080.JPG)
 
-Then, after referring to C:\Users\xiash\seg3103\seg3103_playground\Lab06\BookstoreApp\src\main\java\main\App.java, it used a different jar file:
+Then, after referring to ..\seg3103_playground\Lab06\BookstoreApp\src\main\java\main\App.java, it used a different jar file:
 ```bash
 ProcessBuilder pb = new ProcessBuilder("java", "-jar", "bookstore5.jar");
 ```
@@ -60,11 +60,6 @@ java -jar bookstore5.jar
 Now it worked:
 ![maven](assets/8080-1.JPG)
 
-Then, logged in with admin:
-![maven](assets/login.JPG)
-
-Now the screen showed:
-![maven](assets/8080-2.JPG)
 
 ##### mvn test
 ```bash
@@ -72,5 +67,19 @@ mvn test
 ```
 ![maven](assets/test1.JPG)
 ![maven](assets/test2.JPG)
+
+##### Screenshot of at least one additional selenium web driver test
+Test if it enabled to login as admin:
+![maven](assets/login.JPG)
+
+The code added to ..\seg3103_playground\Lab06\BookstoreApp\src\test\java\selenium\ExampleSeleniumTest.java:
+![maven](assets/test3.JPG)
+
+##### mvn test for new test
+```bash
+mvn test
+```
+![maven](assets/test4.JPG)
+![maven](assets/test5.JPG)
 
 
