@@ -72,7 +72,7 @@ Test if it enabled to login as admin:
 The code added to ..\seg3103_playground\Lab06\BookstoreApp\src\test\java\selenium\ExampleSeleniumTest.java:
 ![maven](assets/test3.JPG)
 
-##### mvn test for new test
+### mvn test for new test
 ```bash
 mvn test
 ```
