@@ -19,7 +19,7 @@ mvn -v
 ### Compile BookStoreApp
 Then extract compressed BookStoreApp file and compile:
 
-##### mvn compile
+##### <u>mvn compile<u>
 ```bash
 mvn compile
 ```
