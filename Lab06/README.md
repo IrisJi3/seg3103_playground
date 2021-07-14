@@ -16,17 +16,14 @@ mvn -v
 ```
 ![maven](assets/mvn-v.JPG)
 
-### Compile BookStoreApp
-Then extract compressed BookStoreApp file and compile:
-
-##### mvn compile
+### mvn compile
 ```bash
 mvn compile
 ```
 ![maven](assets/compile1.JPG)
 ![maven](assets/compile1-2.JPG)
 
-##### mvn package DskipTests
+### mvn package DskipTests
 Then compile all of the tests without running them:
 ```bash
 mvn package -DskipTests
@@ -36,7 +33,7 @@ mvn package -DskipTests
 It packages all project files into one jar file: BookstoreApp-0.1.0.jar:
 ![maven](assets/compile2-2.JPG)
 
-##### java -jar ./target/BookstoreApp-0.1.0.jar
+### java -jar ./target/BookstoreApp-0.1.0.jar
 ```bash
 java -jar ./target/BookstoreApp-0.1.0.jar
 ```
@@ -61,14 +58,14 @@ Now it worked:
 ![maven](assets/8080-1.JPG)
 
 
-##### mvn test
+### mvn test
 ```bash
 mvn test
 ```
 ![maven](assets/test1.JPG)
 ![maven](assets/test2.JPG)
 
-##### Screenshot of at least one additional selenium web driver test
+### Screenshot of at least one additional selenium web driver test
 Test if it enabled to login as admin:
 ![maven](assets/login.JPG)
 
