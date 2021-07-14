@@ -23,7 +23,7 @@ mvn compile
 ![maven](assets/compile1.JPG)
 ![maven](assets/compile1-2.JPG)
 
-### mvn package DskipTests
+### mvn package -DskipTests
 Then compile all of the tests without running them:
 ```bash
 mvn package -DskipTests
