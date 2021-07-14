@@ -14,23 +14,23 @@ download Maven and install by the instruction at https://maven.apache.org/instal
 ```bash
 mvn -v
 ```
-![maven](assets/mvn-v.jpg)
+![maven](assets/mvn-v.JPG)
 
 ### Compile BookStoreApp
 Then extract compressed BookStoreApp file and compile:
 ```bash
 mvn compile
 ```
-![maven](assets/compile1.jpg)
-![maven](assets/compile1-2.jpg)
+![maven](assets/compile1.JPG)
+![maven](assets/compile1-2.JPG)
 
 Then compile all of the tests without running them:
 ```bash
 mvn package -DskipTests
 ```
-![maven](assets/compile2.jpg)
-It packages all project files into one jar file, so that we can easily run it.
-![maven](assets/compile2-2.jpg)
+![maven](assets/compile2.JPG)
+It packages all project files into one jar file: BookstoreApp-0.1.0.jar:
+![maven](assets/compile2-2.JPG)
 
 
 
