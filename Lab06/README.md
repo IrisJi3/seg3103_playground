@@ -19,14 +19,14 @@ mvn -v
 ### Compile BookStoreApp
 Then extract compressed BookStoreApp file and compile:
 
-###### mvn compile
+##### mvn compile
 ```bash
 mvn compile
 ```
 ![maven](assets/compile1.JPG)
 ![maven](assets/compile1-2.JPG)
 
-###### mvn package DskipTests
+##### mvn package DskipTests
 Then compile all of the tests without running them:
 ```bash
 mvn package -DskipTests
@@ -36,7 +36,7 @@ mvn package -DskipTests
 It packages all project files into one jar file: BookstoreApp-0.1.0.jar:
 ![maven](assets/compile2-2.JPG)
 
-###### java -jar ./target/BookstoreApp-0.1.0.jar
+##### java -jar ./target/BookstoreApp-0.1.0.jar
 ```bash
 java -jar ./target/BookstoreApp-0.1.0.jar
 ```
@@ -66,7 +66,7 @@ Then, logged in with admin:
 Now the screen showed:
 ![maven](assets/8080-2.JPG)
 
-###### mvn test
+##### mvn test
 ```bash
 mvn test
 ```
