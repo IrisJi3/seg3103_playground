@@ -310,7 +310,7 @@ public void processNumbers() {
         firstpress = true;  // if equals is pressed set firstpress to false
     } // end if             
     
-      num3 = Double.valueOf( input ).doubleValue();
+      num3 = Double.parseDouble(input);
       answer = calculate( newoper, answer, num3 );      
       showAnswer( Double.toString(answer) );
       
@@ -345,7 +345,7 @@ public double calculate( int oper, double number1, double number2 )
           case SQRT:
             answer = Math.sqrt( number1 );
             break;  
-          default;			
+          default:			
       } // end switch  
       
      return answer;     

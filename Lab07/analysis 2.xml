@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.3.0" sequence="0" timestamp="1626817102192" analysisTimestamp="1626817141522" release="">
+  <Project projectName="CalculatorTest2">
+    <Jar>C:\Users\xiash\seg3103\seg3103_playground\Lab07\calculator\dist</Jar>
+    <SrcDir>C:\Users\xiash\seg3103\seg3103_playground\Lab07\calculator\src</SrcDir>
+    <SrcDir>C:\Users\xiash\seg3103\seg3103_playground\Lab07\calculator\test</SrcDir>
+  </Project>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="processNumbers" signature="()V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="265" end="319" startBytecode="0" endBytecode="416" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <Method classname="java.lang.Double" name="doubleValue" signature="()D" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Double" start="734" end="734" startBytecode="0" endBytecode="46" sourcefile="Double.java" sourcepath="java/lang/Double.java"/>
+    </Method>
+    <Method classname="java.lang.Double" name="parseDouble" signature="(Ljava/lang/String;)J" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="CalCFrame" start="313" end="313" startBytecode="217" endBytecode="217" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC_ANON" priority="3" rank="20" abbrev="SIC" category="PERFORMANCE">
+    <Class classname="CalCFrame$1" role="CLASS_ANONYMOUS">
+      <SourceLine classname="CalCFrame$1" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Class classname="CalCFrame">
+      <SourceLine classname="CalCFrame" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Class>
+    <Method classname="CalCFrame" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="CalCFrame" start="52" end="97" startBytecode="0" endBytecode="635" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+    </Method>
+    <SourceLine classname="CalCFrame" start="53" end="53" startBytecode="203" endBytecode="203" sourcefile="CalCFrame.java" sourcepath="CalCFrame.java"/>
+  </BugInstance>
+  <BugInstance type="SW_SWING_METHODS_INVOKED_IN_SWING_THREAD" priority="3" rank="19" abbrev="SW" category="BAD_PRACTICE">
+    <Class classname="Main">
+      <SourceLine classname="Main" sourcefile="Main.java" sourcepath="Main.java"/>
+    </Class>
+    <Method classname="Main" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Main" start="12" end="16" startBytecode="0" endBytecode="61" sourcefile="Main.java" sourcepath="Main.java"/>
+    </Method>
+    <SourceLine classname="Main" start="15" end="15" startBytecode="22" endBytecode="22" sourcefile="Main.java" sourcepath="Main.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="1">
+    <MissingClass>org.junit.jupiter.api.Assertions</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 20 Jul 2021 17:38:22 -0400" total_classes="4" referenced_classes="292" total_bugs="3" total_size="249" num_packages="1" java_version="11.0.10" vm_version="11.0.10+9" cpu_seconds="57.22" clock_seconds="333.13" peak_mbytes="316.50" alloc_mbytes="4060.00" gc_seconds="0.10" priority_3="2" priority_1="1">
+    <PackageStats package="" total_bugs="3" total_types="4" total_size="249" priority_3="2" priority_1="1">
+      <ClassStats class="CalCFrame" sourceFile="CalCFrame.java" interface="false" size="228" bugs="2" priority_3="1" priority_1="1"/>
+      <ClassStats class="CalCFrame$1" sourceFile="CalCFrame.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="CalcFrameTest" sourceFile="CalCFrameTest.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="Main" sourceFile="Main.java" interface="false" size="8" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1072" invocations="1558" avgMicrosecondsPerInvocation="688" maxMicrosecondsPerInvocation="22624" standardDeviationMicrosecondsPerInvocation="1688"/>
+      <ClassProfile name="edu.umd.cs.findbugs.FindBugs2" totalMilliseconds="561" invocations="2" avgMicrosecondsPerInvocation="280806" maxMicrosecondsPerInvocation="290019" standardDeviationMicrosecondsPerInvocation="9213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="486" invocations="1563" avgMicrosecondsPerInvocation="310" maxMicrosecondsPerInvocation="5048" standardDeviationMicrosecondsPerInvocation="179"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="359" invocations="292" avgMicrosecondsPerInvocation="1232" maxMicrosecondsPerInvocation="17764" standardDeviationMicrosecondsPerInvocation="2333"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="325" invocations="292" avgMicrosecondsPerInvocation="1114" maxMicrosecondsPerInvocation="16127" standardDeviationMicrosecondsPerInvocation="2047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="210" invocations="643" avgMicrosecondsPerInvocation="327" maxMicrosecondsPerInvocation="3608" standardDeviationMicrosecondsPerInvocation="390"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="134" invocations="292" avgMicrosecondsPerInvocation="459" maxMicrosecondsPerInvocation="15438" standardDeviationMicrosecondsPerInvocation="1123"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="108" invocations="1508" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="18093" standardDeviationMicrosecondsPerInvocation="489"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="105" invocations="292" avgMicrosecondsPerInvocation="359" maxMicrosecondsPerInvocation="23931" standardDeviationMicrosecondsPerInvocation="1459"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
