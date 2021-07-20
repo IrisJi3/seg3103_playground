@@ -130,9 +130,7 @@ We just need to delete the code because they did nothing(same result as the prev
 ![bugs](assets/f18.JPG)
 
 ### Check again
-As expected, all bugs that we fixed no longer showed up in the analysis.
-
-There are only 2 bugs remain. The bug 2 and bug 3, we don't actually know what the code should be like, we just have some idea about the reason and what might be the correct way to debug.
+As expected, all bugs that we fixed no longer showed up in the analysis. There are only 2 bugs - bug 2 and bug 3 - remain, since we didn't fix them. 
 ![bugs](assets/bug.JPG)
 
 
