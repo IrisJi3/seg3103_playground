@@ -303,6 +303,24 @@ class ExampleSeleniumTest {
     String current1 = currentcost.getText();
     assertEquals(expected1, current1);
    }
+		
+  @Test
+	public void testC10P(){
+		    driver.get("http://localhost:8080");
+    WebElement catalogue = driver.findElement(By.id("search"));
+    catalogue.sendKeys("Book1");
+    WebElement searchButton = driver.findElement(By.id("searchBtn"));
+    searchButton.click();
+    WebElement orderButton = driver.findElement(By.id("order-001")); 
+    orderButton.click(); //next we go to the cart
+    WebElement cartButton = driver.findElement(By.id("cartLink")); 
+    cartButton.click(); 
+    WebElement checkout = driver.findElement(By.name("checkout")); 
+    checkout.click();
+    String expected1 = "32.00";
+    WebElement currentcost = driver.findElement(By.id("order_taxes"));
+    String current1 = currentcost.getText();
+    assertEquals(expected1, current1);
     
   @Test
 	public void testC10P(){
@@ -336,54 +354,3 @@ class ExampleSeleniumTest {
 		}
 	}
 
-	public void AddBook()
-	{
-		Login();
-
-		WebElement cat = driver.findElement(By.id("addBook-category"));
-		cat.sendKeys("Book1");
-		WebElement id = driver.findElement(By.id("addBook-id"));
-		id.sendKeys("001");
-		WebElement title = driver.findElement(By.id("addBook-title"));
-		title.sendKeys("title");
-		WebElement author = driver.findElement(By.id("addBook-authors"));
-		author.sendKeys("author");
-		WebElement dscp = driver.findElement(By.id("longDescription"));
-		dscp.sendKeys("xxxxxxxxxxxxxxxxxxxxx");
-		WebElement cost = driver.findElement(By.id("cost"));
-		cost.sendKeys("32.00");
-
-		WebElement addBt = driver.findElement(By.name("addBook"));
-		addBt.click();
-	}
-
-	public void DeletBook()
-	{
-		Login();
-
-		driver.get("http://localhost:8080/admin/catalog");
-    
-		WebElement delBt = driver.findElement(By.id("del-001"));
-		delBt.click();
-	}
-
-	public boolean hasBook1()
-	{
-		boolean hasBook1 = false;
-
-		List<WebElement> tdList = driver.findElements(By.tagName("td"));
-		List<String> strList = new ArrayList<String>();
-		for (int i = 0; i < tdList.size(); i++)
-		{
-			strList.add(tdList.get(i).getText());
-		}
-		String expected1 = "001";
-		String expected2 = "title";
-		String expected3 = "32.00";
-		if ((strList.contains(expected1)) && (strList.contains(expected2)) && (strList.contains(expected3)))
-		{
-			hasBook1 = true;
-		}
-
-		return hasBook1;
-	}
