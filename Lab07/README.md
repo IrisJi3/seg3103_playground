@@ -61,7 +61,7 @@ Swing method isVisible() is not thread-safe in Java, so it might cause deadlock 
 Here is the bug:
 ![bugs](assets/b3.JPG)
 
-We know CalCFrame class is the outer here. So we can create a new inner class in CalCframe like inner class. Then we can call inner.WindowClose(WindowEvent e) in outer class, of course make it in a static innner class. So we can pass the WindowEvent as argument and don't need to create a new WindowAdapter to make the class to large. 
+In CalCFrame class, creating WindowAdapter.WindowClosing(WindowEvent e), passing in a WindowEvent as as argument, instead of using a new WindowAdapter. 
 
 ### Bug 4: Private method is never called
 
