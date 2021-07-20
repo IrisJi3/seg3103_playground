@@ -61,7 +61,7 @@ Swing method isVisible() is not thread-safe in Java, so it might cause deadlock 
 Here is the bug:
 ![bugs](assets/b3.JPG)
 
-In CalCFrame class, creating WindowAdapter.WindowClosing(WindowEvent e), passing in a WindowEvent as as argument, instead of using a new WindowAdapter. 
+In CalCFrame class, creating a new inner class WindowAdapter.WindowClosing(WindowEvent e), passing in a WindowEvent as as argument, instead of using a new WindowAdapter. 
 
 ### Bug 4: Private method is never called
 
