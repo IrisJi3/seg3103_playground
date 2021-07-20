@@ -34,9 +34,11 @@ java -jar ./lib/spotbugs/lib/spotbugs.jar
 ```
 
 to start SpotBugs
+
 ![bugs](assets/s1.JPG)
 
 We see there are total 18 bugs in the program:
+
 ![bugs](assets/s2.JPG)
 
 
