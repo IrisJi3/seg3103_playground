@@ -128,9 +128,13 @@ morenums==true, so replace with 'else':
 ![bugs](assets/f18.JPG)
 
 ### Check again
-Compiled and run again.As expected, all bugs that we fixed no longer showed up in the analysis. There are only 2 bugs - bug 2 and bug 3 - remain, since we didn't fix them. 
+Compiled and run again.As expected, all bugs that we fixed no longer showed up in the analysis. 
 ![bugs](assets/bug.JPG)
+Then, fix the double issue in the way way as Bug 5 and Bug 6:
+![bugs](assets/fix.JPG)
 
+Now, there are only 2 bugs - bug 2 and bug 3 - remain, since we didn't fix them. 
+![bugs](assets/bugs.JPG)
 
 
 
