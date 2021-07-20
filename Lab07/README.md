@@ -97,11 +97,9 @@ We just need to make them to static value.
 Here is the bug:
 ![bugs](assets/b13.JPG)
 
-Since all the condition have will lead to the same result, we just need to remove the "else".
+Combined the last 2 statement to 'else':
 
 ![bugs](assets/f13.JPG)
-
-Here we delete all the if,else if and else because this bug is linked to bug 15-17.
 
 ### Bug 14: Switch statement found where default case is missing
 
