@@ -128,7 +128,7 @@ morenums==true, so replace with 'else':
 ![bugs](assets/f18.JPG)
 
 ### Check again
-As expected, all bugs that we fixed no longer showed up in the analysis. There are only 2 bugs - bug 2 and bug 3 - remain, since we didn't fix them. 
+Compiled and run again.As expected, all bugs that we fixed no longer showed up in the analysis. There are only 2 bugs - bug 2 and bug 3 - remain, since we didn't fix them. 
 ![bugs](assets/bug.JPG)
 
 
