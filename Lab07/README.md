@@ -68,8 +68,8 @@ In CalCFrame class, creating a new inner class WindowAdapter.WindowClosing(Windo
 Here is the bug:
 ![bugs](assets/b4.JPG)
 
-Since the code is never called, and it is not a test at all, so I just delete it.
-![Running Java in the console](assets/bug4-4.png)
+Since the code is never called, and it is not a test at all, so deleted or commented the block:
+![bugs](assets/f4.JPG)
 
 
 ### Bug 5 and 6: Boxing/unboxing to parse a primitive
