@@ -116,15 +116,15 @@ We know it just miss a default statement, so we just need to add one.
 Bug 15 to Bug 17 have the same bug issue:
 ![bugs](assets/b15.JPG)
 
-We know the reason is all the condition has the same result, so the condition has no meaning, we can delete all of them
+The whole block is unnecessary, since the result is regardless of value of i. Commented if-else statement or delete them:
 ![bugs](assets/f15.JPG)
 
-### Bug 18: Condition has no effect(2)
+### Bug 18: Condition has no effect 
 
 Here is the bug:
 ![bugs](assets/b18.JPG)
 
-We just need to delete the code because they did nothing(same result as the previous code)
+morenums==true, so replace with 'else':
 ![bugs](assets/f18.JPG)
 
 ### Check again
