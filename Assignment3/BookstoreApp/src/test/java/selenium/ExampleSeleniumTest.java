@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 
 
 import java.util.concurrent.TimeUnit;
-
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -99,7 +99,7 @@ class ExampleSeleniumTest {
   private String[] getWords(String s) {
     return s.split("\\s+");
   }
-}
+
 
 
 
@@ -150,7 +150,7 @@ class ExampleSeleniumTest {
     String expected3 = "http://localhost:8080/login?error";
     String current3 = driver.getCurrentUrl();
     assertEquals(expected3, current3);
-
+	}
 	@Test
 	public void testC3P(){//Add book
     driver.get("http://localhost:8080/admin");
@@ -321,9 +321,9 @@ class ExampleSeleniumTest {
     WebElement currentcost = driver.findElement(By.id("order_taxes"));
     String current1 = currentcost.getText();
     assertEquals(expected1, current1);
-    
+    }
   @Test
-	public void testC10P(){
+	public void testC102P(){
     driver.get("http://localhost:8080");
     
     Select lang = new Select(driver.findElement(By.id("locales")));
@@ -354,3 +354,4 @@ class ExampleSeleniumTest {
 		}
 	}
 
+}
