@@ -134,7 +134,7 @@ class ExampleSeleniumTest {
     WebElement loginButton = driver.findElement(By.id("loginBtn"));
     loginButton.click();
     
-    String expected1 = "error";
+    String expected1 = "http://localhost:8080/login?error";
     String current1 = driver.getCurrentUrl();
     assertEquals(expected1, current1);
   }
@@ -147,7 +147,7 @@ class ExampleSeleniumTest {
 
 		signoutBt.click();
     
-    String expected3 = "http://localhost:8080/login?error";
+    String expected3 = "http://localhost:8080/login?logout";
     String current3 = driver.getCurrentUrl();
     assertEquals(expected3, current3);
 	}
@@ -229,7 +229,7 @@ class ExampleSeleniumTest {
     catalogue.sendKeys("");
     WebElement searchButton = driver.findElement(By.id("searchBtn"));
     searchButton.click();
-    String expected1 = "Book1";
+    String expected1 = "Marty Hall and Larry Brown";
     WebElement currentcat = driver.findElement(By.id("authors-001"));
     String current1 = currentcat.getText();
     assertEquals(expected1, current1);
@@ -261,7 +261,7 @@ class ExampleSeleniumTest {
     loginButton.click();
     WebElement searchButton = driver.findElement(By.id("searchBtn"));
     searchButton.click();
-    WebElement deleteButton = driver.findElement(By.id("del-hall002"));
+    WebElement deleteButton = driver.findElement(By.id("del-001"));
     deleteButton.click();
     
     String expected1 = "http://localhost:8080/admin/catalog";
@@ -274,9 +274,11 @@ class ExampleSeleniumTest {
     driver.get("http://localhost:8080");
     
     WebElement catalogue = driver.findElement(By.id("search"));
-    catalogue.sendKeys("book1");
+    catalogue.sendKeys("");
     WebElement searchButton = driver.findElement(By.id("searchBtn"));
     searchButton.click();
+	WebElement orderButton = driver.findElement(By.id("order-001"));
+	 orderButton.click();
     WebElement cartButton = driver.findElement(By.id("cartLink")); 
     cartButton.click(); 
     String expected1 = "http://localhost:8080/orderPage";
@@ -289,10 +291,12 @@ class ExampleSeleniumTest {
     driver.get("http://localhost:8080");
      
     WebElement catalogue = driver.findElement(By.id("search"));
-    catalogue.sendKeys("Book1");
+    catalogue.sendKeys("");
     WebElement searchButton = driver.findElement(By.id("searchBtn"));
     searchButton.click();
-    WebElement cartButton = driver.findElement(By.id("cartLink")); 
+    WebElement orderButton = driver.findElement(By.id("order-001"));
+	 orderButton.click();
+	WebElement cartButton = driver.findElement(By.id("cartLink")); 
     cartButton.click(); 
     WebElement inc = driver.findElement(By.id("001"));
     inc.sendKeys("2");
@@ -308,7 +312,7 @@ class ExampleSeleniumTest {
 	public void testC10P(){
 		    driver.get("http://localhost:8080");
     WebElement catalogue = driver.findElement(By.id("search"));
-    catalogue.sendKeys("Book1");
+    catalogue.sendKeys("");
     WebElement searchButton = driver.findElement(By.id("searchBtn"));
     searchButton.click();
     WebElement orderButton = driver.findElement(By.id("order-001")); 
