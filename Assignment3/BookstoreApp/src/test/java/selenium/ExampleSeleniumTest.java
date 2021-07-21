@@ -134,7 +134,7 @@ class ExampleSeleniumTest {
     WebElement loginButton = driver.findElement(By.id("loginBtn"));
     loginButton.click();
     
-    String expected1 = "http://localhost:8080/login?error";
+    String expected1 = "error";
     String current1 = driver.getCurrentUrl();
     assertEquals(expected1, current1);
   }
