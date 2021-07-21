@@ -328,7 +328,7 @@ class ExampleSeleniumTest {
     
     Select lang = new Select(driver.findElement(By.id("locales")));
     lang.selectByVisibleText("French");
-    String expected1 = "Book1";
+    String expected1 = "Librairie Y'AMAZONE";
     WebElement titleInFrench = driver.findElement(By.id("title"));
     String current1 = titleInFrench.getText();
     assertEquals(expected1, current1); 
